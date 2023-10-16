@@ -1,0 +1,78 @@
+.body > ._client{
+    margin-top: 20px;
+}
+
+/******** sidebar ********/
+.body > ._client > ._sidebar > ._list{
+    padding-left: 0;
+    margin-top: 20px;
+}
+.body > ._client > ._sidebar > ._list > ._title{
+    font-size: 18px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ab0000;
+    color: #ab0000;
+}
+.body > ._client > ._sidebar  > ._list > a{
+    display: block;
+    font-size: 12px;
+    padding: 0 20px 0 45px;
+    height: 25px;
+    line-height: 25px;
+    color: #a8a8a8;
+    text-decoration: none;
+    outline: none;
+}
+.body > ._client > ._sidebar  > ._list > a:hover{
+    text-decoration: underline;
+}
+
+/******** main *********/
+.body > ._client > ._main{
+    float: right;
+    width: 780px;
+}
+.body > ._client > ._main > ._title{
+    font-size: 24px;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    color: #ab0000;
+}
+.body > ._client > ._main > ._subtitle{
+    height: 40px;
+    color: #a8a8a8;
+    text-align: center;
+    margin-top: 10px;
+}
+.body > ._client > ._main > ._description{
+    font-size: 13px;
+    padding: 15px;
+    line-height: 1.5em;
+    background: #24251F;
+    background: rgba(72, 74, 63, 0.5);
+    color: #a8a8a8;
+}
+.body > ._client > ._main > ._content{
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+/*********** screen resolution ***********/
+@media all and (min-width: 800px) {
+    .body > ._client > ._main{
+        width: -moz-calc(100% - 320px);
+        width: -webkit-calc(100% - 320px);
+        width: calc(100% - 320px);
+    }
+}
+@media all and (max-width: 800px){
+    .body > ._client > ._sidebar{
+        display: none;
+    }
+    .body > ._client > ._main{
+        width: 100%;
+    }
+}

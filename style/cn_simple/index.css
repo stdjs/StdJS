@@ -1,0 +1,540 @@
+/********* title *********/
+.title{
+    margin: 0 auto 40px auto;
+}
+.title > ._name{
+    text-align: center;
+}
+.title > ._name h1{
+    font-size: 56px;
+    padding: 0;
+    margin: 40px;
+    text-shadow: 0 0 4px #797979;
+}
+.title > ._text{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: gray;
+    line-height: 2em;
+}
+
+/********* client *********/
+.client{
+    margin-top: 100px;
+}
+
+/********* .client > ._download *********/
+.client > ._download{
+    font-family:"Helvetica Neue","Segoe UI",Segoe,Helvetica,Arial,"Lucida Grande",sans-serif;
+    position: relative;
+    float: left;
+    outline: none;
+    margin: 0 auto;
+    width: 320px;
+    height: 320px;
+    border: 3px solid gray;
+    border-radius: 100%;
+    text-decoration: none;
+    color: #ADADAD;
+}
+.client > ._download table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.client > ._download table ._name{
+    font-size: 48px;
+}
+.client > ._download table ._text{
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+
+/********* .client > ._labels *********/
+.client > ._labels{
+    width: 280px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.client > ._labels > ._label{
+    display: block;
+    font-size: 21px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid gray;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.client > ._labels._left{
+    float: left;
+    text-align: right;
+    margin-right: 50px;
+    transform: skew(-5deg);
+}
+.client > ._labels._right{
+    float: right;
+    text-align: left;
+    margin-left: 50px;
+    transform: skew(5deg);
+}
+.client > ._labels._left > ._label{
+    padding-right: 25px;
+}
+.client > ._labels._right > ._label{
+    padding-left: 25px;
+}
+
+
+/********* detailPage *********/
+.detailPage{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: #000000;
+    background: rgba(33,33,33,0.7);
+}
+.detailPage > ._close{
+    position: absolute;
+    z-index: 9;
+    top: 15px;
+    right: 30px;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    background: url("images/base.png") 0 -355px no-repeat;
+}
+.detailPage > ._close.hover{
+    background-position: -33px -355px;
+}
+.detailPage > ._close.press{
+    background-position: -67px -355px;
+}
+.detailPage > ._nav{
+    float: left;
+    width: 60px;
+    height: 100%;
+    background: #2F2F2F;
+}
+.detailPage > ._nav > ._item{
+    display: block;
+    width: 60px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-image: url("images/base.png");
+    background-repeat: no-repeat;
+}
+.detailPage > ._nav > ._item.hover{
+    background-color: #404040;
+}
+.detailPage > ._nav > ._item.press{
+    background-color: #232323;
+}
+.detailPage > ._nav > ._item._close{
+    background-position: 13px -400px;
+}
+.detailPage > ._nav > ._item._features{
+    background-position: 13px -468px;
+}
+.detailPage > ._nav > ._item._problems{
+    background-position: 13px -530px;
+}
+.detailPage > ._nav > ._item._examples{
+    background-position: 12px -595px;
+}
+.detailPage > ._nav > ._item._projects{
+    background-position: 12px -660px;
+}
+
+.detailPage > ._details{
+    height: 100%;
+
+    overflow-x: hidden;
+    padding-left: 5px;
+}
+.detailPage > ._details > ._detail{
+    clear: both;
+    padding: 50px 0 50px 0;
+}
+.detailPage > ._details > ._detail > ._title{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-bottom: 3px solid #0075f7;
+}
+.detailPage > ._details > ._detail._features{
+    margin: 0 auto;
+    width: 1000px;
+}
+.detailPage > ._details > ._detail._features > ._item{
+    float: left;
+    width: 48%;
+    height: 170px;
+    margin: 10px 0 10px 0;
+    transform:skewX(-10deg);
+}
+.detailPage > ._details > ._detail._features > ._item > ._title{
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 15px #0075f7;
+}
+.detailPage > ._details > ._detail._features > ._item > ._description{
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 0 20px 20px 20px;
+    color: #A8A8A8;
+    transform:skewX(10deg);
+}
+.detailPage > ._details > ._detail._features > ._item._last{
+    float: right;
+}
+
+.detailPage > ._details > ._detail._problems{
+    margin: 0 auto;
+    width: 1000px;
+}
+.detailPage > ._details > ._detail._problems > ._problem{
+    float: left;
+    width:33.3%;
+    height: 200px;
+}
+.detailPage > ._details > ._detail._problems > ._problem > ._title{
+    font-size: 22px;
+    padding-left: 55px;
+    height: 42px;
+    color: #9D9D9D;
+    text-decoration:line-through;
+    text-shadow: 0 0 15px #0075f7;
+    background: url("images/base.png") 16px 3px no-repeat;
+}
+.detailPage > ._details > ._detail._problems > ._problem > ._content{
+    color: #A8A8A8;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.6em;
+}
+
+.detailPage > ._details > ._detail._examples{
+    margin: 0 auto;
+    width: 1000px;
+}
+.detailPage > ._details > ._detail._examples > ._example{
+    color: #A8A8A8;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.6em;
+}
+
+.detailPage > ._details > ._detail._projects{
+    margin: 0 auto;
+    width: 1000px;
+}
+.detailPage > ._details > ._detail._projects > ._project{
+    float: left;
+    color: #A8A8A8;
+    width: 33.3%;
+    height: 140px;
+    overflow: hidden;
+    line-height: 1.6em;
+}
+
+.detailPage > ._details > ._detail._projects > ._project > ._icon{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #3C3C3C;
+    margin-right: 15px;
+    border-radius: 100%;
+    background: url("images/base.png") 23px -32px no-repeat;
+}
+.detailPage > ._details > ._detail._projects > ._project > ._icon._unlock{
+    border-color: transparent;
+    background: url("images/base.png") 4px -125px no-repeat;
+}
+.detailPage > ._details > ._detail._projects > ._project > ._info{
+    display: inline;
+    overflow: hidden;
+}
+.detailPage > ._details > ._detail._projects > ._project > ._info > ._name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #CECECE;
+    text-decoration: none;
+    text-shadow: 0 0 10px #0075f7;
+}
+.detailPage > ._details > ._detail._projects > ._project > ._info > a._name:hover{
+    text-decoration: underline;
+}
+.detailPage > ._details > ._detail._projects > ._project > ._info  > ._content{
+    margin-top: 10px;
+    padding-right: 15px;
+    color: #A8A8A8;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.detailPage > ._details > ._detail._subscribe{
+    margin: 0 auto 150px auto;
+    width: 1000px;
+    border-top: 3px solid #0075f7;
+}
+.detailPage > ._details > ._detail._subscribe > ._text{
+    font-size: 16px;
+    text-align: center;
+    color: #a8a8a8;
+    margin-top: 30px;
+}
+.detailPage > ._details > ._detail._subscribe > ._input{
+    margin: 30px auto;
+    text-align: center;
+}
+.detailPage > ._details > ._detail._subscribe > ._input > input{
+    margin: 0 auto;
+    width: 350px;
+    padding: 10px;
+    color: gray;
+    border: 1px solid #343434;
+    box-sizing: border-box;
+    background-color: #171717;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxOCAxMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPlN0ZWxsYXIgZW52ZWxvcGU8L3RpdGxlPjxwYXRoIGQ9Ik0xNy43MzMgMTEuMDI3di05LjcxOWMwLS4zNy0uMTYzLS43MTItLjQxLS45NTVsLS4xMS0uMDk3Yy0uMjAzLS4xNTgtLjQ0Ni0uMjU2LS43MDUtLjI1NmgtMTUuMjgzYy0uMjc4IDAtLjUzMy4xMDMtLjczOS4yNzFsLS4wMS4wMDljLS4yODcuMjQtLjQ3Ni42MDktLjQ3NiAxLjAyOHY5LjcxOWMwIC4zNDkuMTI4LjY3OC4zNTkuOTI1LjIzMS4yNDcuNTM5LjM4My44NjYuMzgzaDE1LjI4M2MuMzI3IDAgLjYzNS0uMTM2Ljg2Ni0uMzgzLjIzMS0uMjQ3LjM1OS0uNTc1LjM1OS0uOTI1em0tMi4zNTMtOS44OTZsLTYuNDk1IDQuMzk0LTYuNTI0LTQuMzk0aDEzLjAxOXptMS4xMjggMTAuMDc0aC0xNS4yODNjLS4xMiAwLS4xNjYtLjA1LS4xNjYtLjE3N3YtOS40MzdsNy41NDQgNS4wODFjLjE3My4xMTYuMzkzLjExNi41NjUtLjAwMWw3LjUwNS01LjA3OHY5LjQzNWwtLjA0OS4xMjUtLjExOC4wNTJ6IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBmaWxsPSIjRDRENEQ0Ii8+PC9zdmc+Cg==");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+.detailPage > ._details > ._detail._subscribe > ._input > input:focus{
+    border-color: #0075f7;
+    color: white;
+}
+.detailPage > ._details > ._detail._subscribe > ._submit{
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #0075f7;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    color: #0075f7;
+    cursor: pointer;
+}
+.detailPage > ._details > ._detail._subscribe > ._submit.hover{
+    color: #249CF7;
+    border-color: #249CF7;
+    background-color: #00060E;
+    background-color: rgba(0,117,247,0.05);
+}
+.detailPage > ._details > ._detail._subscribe > ._submit.press{
+    background-color: #000B19;
+    background-color: rgba(0,117,247,0.1);
+}
+.detailPage > ._details > ._detail._subscribe > ._message{
+    font-size: 14px;
+    margin: 25px auto;
+    height: 40px;
+    text-align: center;
+    color: gray;
+}
+
+/*********** screen ***********/
+@media all and (max-width: 1100px) {
+    .title > ._name h1{
+        font-size: 48px;
+    }
+    .client{
+        margin-top: 80px;
+    }
+    .client > ._download{
+        width: 280px;
+        height: 280px;
+    }
+    .client > ._download table ._name{
+        font-size: 42px;
+    }
+    .client > ._labels{
+        width: 257px;
+        margin-top: 20px;
+    }
+
+    .detailPage > ._details > ._detail{
+        padding: 15px 0 15px 0;
+    }
+    .detailPage > ._details > ._detail > ._title{
+        font-size: 28px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .detailPage > ._details > ._detail._features,
+    .detailPage > ._details > ._detail._problems,
+    .detailPage > ._details > ._detail._examples,
+    .detailPage > ._details > ._detail._projects,
+    .detailPage > ._details > ._detail._subscribe{
+        box-sizing: border-box;
+        width: 98%;
+    }
+}
+@media all and (max-width: 920px) {
+    .title > ._name h1{
+        font-size: 42px;
+    }
+    .client{
+        margin-top: 60px;
+    }
+    .client > ._download{
+        width: 230px;
+        height: 230px;
+    }
+    .client > ._download table ._name{
+        font-size: 36px;
+    }
+    .client > ._labels{
+        width: 210px;
+        margin-top: 10px;
+    }
+    .client > ._labels._left{
+        margin-right: 20px;
+    }
+    .client > ._labels._right{
+        margin-left: 20px;
+    }
+    .client > ._labels > ._label{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .detailPage > ._details > ._detail{
+        padding:  0;
+    }
+    .detailPage > ._details > ._detail > ._title{
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .detailPage > ._details > ._detail._problems > ._problem{
+        width:49%;
+    }
+    .detailPage > ._details > ._detail._problems > ._problem > ._title{
+        font-size: 18px;
+    }
+
+    .detailPage > ._details > ._detail._projects > ._project{
+        width: 49%;
+    }
+}
+@media all and (max-width: 720px) {
+    .title > ._name h1{
+        font-size: 28px;
+    }
+    .client{
+        margin-top: 50px;
+    }
+    .client > ._download{
+        width: 180px;
+        height: 180px;
+    }
+    .client > ._download table ._name{
+        font-size: 28px;
+    }
+    .client > ._download table ._text{
+        font-size: 12px;
+    }
+    .client > ._labels{
+        width: 145px;
+        margin-top: 10px;
+    }
+    .client > ._labels._left{
+        margin-right: 10px;
+    }
+    .client > ._labels._right{
+        margin-left: 10px;
+    }
+    .client > ._labels > ._label{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .detailPage > ._details > ._detail{
+        padding: 5px 0 5px 0;
+    }
+    .detailPage > ._details > ._detail > ._title{
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .detailPage > ._details > ._detail._features > ._item{
+        width: 98%;
+    }
+    .detailPage > ._details > ._detail._features > ._item > ._description{
+        padding: 0;
+    }
+
+    .detailPage > ._details > ._detail._problems > ._problem{
+        width: 98%;
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .detailPage > ._details > ._detail._problems > ._problem > ._title{
+        font-size: 18px;
+    }
+
+    .detailPage > ._details > ._detail._projects > ._project{
+        width: 98%;
+    }
+}
+@media all and (max-width: 520px) {
+    .title > ._name h1{
+        font-size: 26px;
+    }
+    .client{
+        margin-top: 40px;
+    }
+    .client > ._download{
+        display: none;
+    }
+    .client > ._labels{
+        width: 100%;
+        margin-top: 0;
+    }
+    .client > ._labels._left{
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        transform: skew(0deg);
+    }
+    .client > ._labels._right{
+        float: none;
+        margin-left: 0;
+        text-align: center;
+        transform: skew(0deg);
+    }
+    .client > ._labels > ._label{
+        float: none;
+        width: 90%;
+        font-size: 18px;
+        margin: 0 auto 20px auto;
+    }
+    .client > ._labels._left > ._label{
+        padding-right: 0;
+    }
+    .client > ._labels._right > ._label{
+        padding-left: 0;
+    }
+
+    .detailPage > ._details > ._detail._subscribe > ._input > input{
+        width: 95%;
+    }
+}

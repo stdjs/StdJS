@@ -1,0 +1,163 @@
+a{
+    color: #538ddd;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2{
+    color: #ab0000;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+}
+h3{
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    font-size: 18px;
+    height: 30px;
+    letter-spacing: 1px;
+    color: #AB0000;
+    border-bottom: 2px solid #741616;
+}
+._block{
+    margin-bottom: 50px;
+}
+
+/******* main *******/
+.body > ._client{
+    margin-top: 20px;
+}
+.body > ._client > ._main ._downloadButton{
+    font-size: 12px;
+    display: inline-block;*display: inline;*zoom: 1;
+    padding: 0 15px 0 55px;
+    height: 60px;
+    line-height: 60px;
+    background-image: url("images/base.png");
+    background-position: 8px -255px;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+.body > ._client > ._main ._downloadButton:hover{
+    text-decoration: none;
+    background-color: #4B0000;
+    background-color: rgba(133,0,0,0.6);
+}
+.body > ._client > ._main input{
+    color: white;
+    font-size: 12px;
+    width: 350px;
+    padding: 8px 5px 8px 5px;
+    background: #1F0000;
+    background: rgba(70,0,0,0.4);
+    border: 1px solid #681414;
+}
+.body > ._client > ._main p{
+    font-size: 14px;
+}
+
+/******* history *******/
+._block > ._history{
+
+}
+._block >  ._history > ul{
+    list-style: decimal-leading-zero;
+}
+._block >  ._history > ul > li{
+    padding-left: 40px;
+}
+._block >  ._history  ._item{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+._block >  ._history  ._item > ._version{
+    height: 35px;
+}
+._block >  ._history  ._item > ._version > ._version{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ab0000;
+}
+._block >  ._history  ._item > ._version > ._uptime{
+    margin-left: 10px;
+    color: #838383;
+}
+._block >  ._history  ._item > ._link{
+    height: 25px;
+}
+._block > ._history ._item > ._uptime{
+    height: 25px;
+    color: white;
+}
+._block > ._history ._item > ._description{
+    font-size: 12px;
+}
+
+/******* browsers *******/
+._block >  ._browsers{
+    margin-top: 30px;
+}
+._block >  ._browsers > ._browser{
+    display: inline-block;*display: inline;*zoom: 1;
+    margin-bottom: 20px;
+    width: 100px;
+}
+._block > ._browsers > ._browser > ._text{
+    font-size: 12px;
+    text-align: center;
+}
+._block > ._browsers > ._browser > ._version{
+    font-size: 13px;
+    text-align: center;
+}
+._block > ._browsers > ._browser > ._icon{
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    background: url("images/download.png") no-repeat;
+    opacity: 0.8;
+}
+._block > ._browsers > ._browser > ._icon._firefox{
+    background-position: 0 0;
+}
+._block > ._browsers > ._browser > ._icon._IE{
+    background-position: 0 -60px;
+}
+._block > ._browsers > ._browser > ._icon._safari{
+    background-position: 0 -121px;
+}
+._block > ._browsers > ._browser > ._icon._chrome{
+    background-position: 0 -189px;
+}
+._block > ._browsers > ._browser > ._icon._opera{
+    background-position: 0 -252px;
+}
+._block > ._browsers > ._browser > ._icon._konqueror{
+    background-position: 0 -319px;
+}
+
+/*********** screen resolution ***********/
+@media all and (min-width: 800px) {
+    .body > ._client > ._main{
+        width: -moz-calc(100% - 320px);
+        width: -webkit-calc(100% - 320px);
+        width: calc(100% - 320px);
+    }
+}
+@media all and (max-width: 800px){
+    .body > ._client > ._sidebar{
+        display: none;
+    }
+    .body > ._client > ._main{
+        width: 100%;
+    }
+}
+@media all and (max-width: 600px){
+    .body > ._client > ._main input{
+        width: 95%;
+    }
+}
+

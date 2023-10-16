@@ -1,0 +1,110 @@
+.body > ._client{
+    margin-top: 20px;
+}
+
+/******** filters ********/
+.body > ._client > ._sidebar > ._filters{
+    padding-left: 0;
+    margin-top: 20px;
+}
+.body > ._client > ._sidebar > ._filters > ._title{
+    font-size: 18px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ab0000;
+    color: #ab0000;
+}
+.body > ._client > ._sidebar > ._filters > ._filter{
+    display: block;
+    padding: 10px 0 10px 45px;
+}
+.body > ._client > ._sidebar  > ._filters > ._filter a{
+    font-size: 14px;
+    color: #a8a8a8;
+    text-decoration: none;
+    outline: none;
+}
+.body > ._client > ._sidebar  > ._filters > ._filter a:hover{
+    text-decoration: underline;
+}
+.body > ._client > ._sidebar  > ._filters > ._filter a.selected{
+    color: #ab0000;
+    font-weight: bold;
+}
+
+/********* main ********/
+.body > ._client > ._main{
+    float: right;
+    overflow: hidden;
+}
+.body > ._client > ._main > ._log{
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-bottom: 1px dashed #2E0606;
+}
+.body > ._client > ._main > ._log > ._title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ab0000;
+    text-decoration: none;
+}
+.body > ._client > ._main > ._log > ._title:hover{
+    text-decoration: underline;
+}
+.body > ._client > ._main > ._log > ._uptime{
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    color: #939393;
+}
+.body > ._client > ._main > ._log > ._description{
+    font-size: 13px;
+    line-height: 1.4em;
+    overflow: hidden;
+}
+
+.body > ._client > ._main > ._pages{
+    height: 30px;
+}
+.body > ._client > ._main > ._pages > ._page{
+    float: left;
+    font-size: 13px;
+    color: white;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px 0 12px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    background: #4B0000;
+    background: rgba(133,0,0,0.6);
+    border:1px solid rgb(113,0,0);
+}
+.body > ._client > ._main > ._pages > ._page:hover{
+    background: #720000;
+}
+.body > ._client > ._main > ._pages > ._page.selected{
+    background: #538ddd;
+    border-color: #6DA4EC;
+}
+
+/*********** screen resolution ***********/
+@media all and (min-width: 800px) {
+    .body > ._client > ._main{
+        width: -moz-calc(100% - 320px);
+        width: -webkit-calc(100% - 320px);
+        width: calc(100% - 320px);
+    }
+}
+@media all and (max-width: 800px){
+    .body > ._client > ._sidebar{
+        display: none;
+    }
+    .body > ._client > ._main{
+        margin: 0 auto;
+        width: 95%;
+    }
+}

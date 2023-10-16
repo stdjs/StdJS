@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>StdJS</title>
+    <meta name="keywords" content="Std javascript library,StdJS,js库,StdJS中文官方网站" />
+    <meta name="description" content="StdJS是面向高级web开发者的Javascript库,它让Javascript变得有规范性,有组织性,有高度的协调性,让开发过程变得简单化,清晰化与前所未有的的高效化.它改变了Javascript的编码方式,将其本身的价值提升到了一个完美的高度."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="dns-prefetch" href="http://source.stdjs.com/">
+    <link rel="dns-prefetch" href="http://doc.stdjs.com/">
+    <link rel="canonical" href="http://www.stdjs.com"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico"/>
+    <link rel="stylesheet" href="style/cn_simple/base.css" />
+    <link rel="stylesheet" href="style/cn_simple/index.css"/>
+    <script src="javascript/common/std.min.js"></script>
+    <script src="javascript/cn_simple/base.js"></script>
+    <script src="javascript/cn_simple/index.js"></script>
+    <script type="text/std-animation">
+        @keyframes lockedProjectIcon{
+            0%{
+                filter:brightness(1)
+            }
+            100%{
+                filter:brightness(1.8)
+            }
+        }
+        @keyframes unlockProjectIcon{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="_links font2">
+        <a class="_link{{IF LocationName=='index'}} selected{{END}}" href="./">
+            <span class="_name1">网站首页</span>
+            <span class="_name2">首页</span>
+        </a>
+        <a class="_link{{IF LocationName=='download'}} selected{{END}}" href="download.html">
+            <span class="_name1">下载StdJS</span>
+            <span class="_name2">下载</span>
+        </a>
+        <a class="_link{{IF LocationName=='log'}} selected{{END}}" href="#">
+            <span class="_name1">相关日志</span>
+            <span class="_name2">日志</span>
+        </a>
+        <a class="_link" href="http://doc.stdjs.com/">
+            <span class="_name1">API文档</span>
+            <span class="_name2">文档</span>
+        </a>
+        <a class="_link" href="http://doc.stdjs.com/">
+            <span class="_name1">技术文章</span>
+            <span class="_name2">文章</span>
+        </a>
+    </div>
+</div>
+
+<div class="body">
+    <div class="title">
+        <div class="_name">
+            <h1 class="font1">Std Javascript Library</h1>
+        </div>
+        <div class="_text">
+            StdJS是面向高级web开发者的Javascript库,
+            它让Javascript变得有规范性,有组织性,有高度的协调性,让开发过程变得简单化,清晰化与前所未有的的高效化.
+            它改变了Javascript的编码方式,将其本身的价值提升到了一个完美的高度.
+        </div>
+    </div>
+
+    <div class="client">
+        <div class="_labels _left">
+            <a class="_label" data-with="features" href="#">StdJS特点</a>
+            <a class="_label" data-with="examples" href="#">代码例子</a>
+            <a class="_label" data-with="projects" href="#">相关链接</a>
+        </div>
+
+        <a class="_download font1" href="download.html" hidefocus>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="_name">Download</div>
+                        <div class="_text">Latest version: {{LatestVersion}}</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </a>
+
+        <div class="_labels _right">
+            <a class="_label" data-with="problems" href="#">解决的问题</a>
+            <a class="_label" href="http://doc.stdjs.com/{{Config_ActionPath}}documentation.location_documentation&ID=8">学习StdJS</a>
+            <a class="_label" href="mailto:a@stdjs.com">联系我们</a>
+        </div>
+    </div>
+</div>
+
+<div class="detailPage" id="detailPage" tabindex="1">
+    <div class="_close" title="关闭"></div>
+    <div class="_nav">
+        <div class="_item _close" data-action="close" title="关闭"></div>
+        <div class="_item _features" data-action="features" title="StdJS特点"></div>
+        <div class="_item _problems" data-action="problems" title="解决的问题"></div>
+        <div class="_item _examples" data-action="examples" title="代码例子"></div>
+        <div class="_item _projects" data-action="projects" title="相关链接"></div>
+    </div>
+
+    <div class="_details">
+        <div class="_detail _features">
+            <div class="_title">StdJS的特点</div>
+            <div class="_item">
+                <div class="_title font1">功能设计</div>
+                <div class="_description">
+                    大幅修复了JS本身的缺陷,并对现有的技术进行了极大的改良,同时内置多种独有的新技术,功能灵活并拥有高度的可塑造性,不受语言本身的限制.
+                </div>
+            </div>
+            <div class="_item _last">
+                <div class="_title font1">底层架构</div>
+                <div class="_description">
+                    精细,高度耦合的内部结构设计,极致的模块化设计,极高的代码复用性,每一个功能都有实际使用价值,没有一个多余设计,没有一行多余代码. 任何模块,方法,均可无限制的扩展.
+                </div>
+            </div>
+            <div class="_item">
+                <div class="_title font1">性能级别</div>
+                <div class="_description">
+                    在高度复杂的大型工程中性能跑分能媲美原生代码.在相同功能综合性能上可以高过StdJS性能的第三方库极少,或根本不存在.
+                </div>
+            </div>
+            <div class="_item _last">
+                <div class="_title font1">API设计</div>
+                <div class="_description">
+                    根据神经生物学,认知心理学原理而设计的更容易联想,更容易推算,更容易记忆的API接口, 从逻辑上根本的解决学习与开发的复杂度.
+                </div>
+            </div>
+        </div>
+
+        <div class="_detail _problems">
+            <div class="_title">它解决了这些问题</div>
+            <div class="_problem">
+                <div class="_title font1">重复撰写代码</div>
+                <div class="_content">
+                    为实现相似功能,被迫一次又一次的编写相同代码,
+                    导致大量时光的流逝同时丧失了创作的本质,使其变为了一个臃肿的机械化的且毫无休止的重复性过程.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">功能难以实现</div>
+                <div class="_content">
+                    在大型复杂的工程开发中,无法感受到创作的乐趣,造成开发者自我价值的否定,导致开发者生命活力的枯竭.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">代码污染严重</div>
+                <div class="_content">
+                    多人开发过程中,代码混杂,缺乏标准的约束,非常难以维护,犹如梦魇,功能互相冲突,扰乱开发者的心智,如同癌变.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">开发效率低下</div>
+                <div class="_content">
+                    投入大量的精力和时间去解决一些毫无意义的问题,时间和精力无法与结果划上等号,导致开发者本身的价值沦丧.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">性能低下</div>
+                <div class="_content">
+                    缺乏优秀的底层架构,执行速度如同蜗牛一般,所到之处,全是粘液.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">代码风格恶劣</div>
+                <div class="_content">
+                    随意性的变量命名,缺乏一致性的代码组合方式,难以入目,极难理解,呈现出的是一种极度的畸形和扭曲,
+                    给阅读者带来视觉与心理上的恶性刺激.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">浏览器互不兼容</div>
+                <div class="_content">
+                    不同浏览器下代码异常,取值错误,数据混乱,方法不统一,功能不支持等诸多问题犹如天敌一般的存在.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">缺乏可控制性</div>
+                <div class="_content">
+                    功能死板不可动态调节,不可动态修改,用途固定且适用范围局限,永远都在编写一次性的代码.
+                </div>
+            </div>
+
+            <div class="_problem">
+                <div class="_title font1">设计思想分化</div>
+                <div class="_content">
+                    层出不穷的规范,模型,互不协调,互不融合,犬儒般的设计模式让开发者的视野和认知变得局限,使开发者想象力变得贫乏.
+                </div>
+            </div>
+        </div>
+
+        <div class="_detail _examples">
+            <div class="_title">一些代码例子</div>
+            <div class="_example">
+                  <pre><code class="javascript">
+/*
+* 创建一个div节点同时包含10个HTML为abc的span子节点,并添加到body.
+*/
+var abc = new Std.dom("div>span{abc}*10","body")
+                  </code></pre>
+            </div>
+
+            <div class="_example">
+                <pre><code class="html">
+&lt;!--
+利用css selector方式来编写html代码,该代码可以直接被转换为html
+--&gt;
+&lt;script type="text/std-css-selector" render-here="true"&gt;
+    (.header > .title + .navigation) +
+    (.body > .content > span{body content}) +
+    (.footer > .links > (a[href='#']{link1} + a[href='#']{link2}))
+&lt;/script&gt;
+                </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode"><code class="html">
+&lt;!--
+用css selector字符串进行快速创建UI组建的布局,比JS创建省下了80%的代码
+--&gt;
+
+&lt;script type="text/std-ui" std-name="test"&gt;
+GridLayout[rows=3][columns=2] > (
+    (Label{名称:} + LineEdit#name) +
+    (Label{日期:} + DateTimeEdit#dateTime) +
+    (Label{描述:} + TextEdit#text)
+)
+&lt;/script&gt;
+                 </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode HTML"><code class="javascript">
+/*
+* 异步载入第三方外部资源文件,文件全部载入之后会触发 Std.main 方法
+* Std.require 方法支持跨域文件的载入
+*/
+
+//3个文件同时载入
+Std.require("1.js","1.css","123.png");
+
+//3个文件顺序载入,一个载入完成之后载入下一个
+Std.require(["1.js","1.css","123.png"]);
+                 </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode"><code class="javascript">
+/*
+* 设置代码仓库的源地址,当使用代码源中包时自动加载对应代码文件,而无需手动调用
+* 源中可以包含数千个包,而这些包仅会在使用时候才会被载入.
+*/
+Std.source("StdJS","http://source.stdjs.com");
+
+//载入名称为 ui.Window 包之后触发回调函数
+Std.use("ui.Window",function(){
+    //...
+});
+
+//创建一个函数,在执行这个函数时候,自动从代码源中载入包 "ui.Button","ui.ToolBar"
+var func1 = Std.func(function(){
+    //....
+},{
+    packages:["ui.Button","ui.ToolBar"]
+});
+                 </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode"><code class="javascript">
+/*
+* 添加新的根据浏览器内核自动调配的css规则.
+* 该方法可以自动解决浏览器的兼容性,并且随时可以删除或禁用这个规则
+* 该方法在大多情况下都可以直接替代style或link标签来载入css
+*/
+Std.css({
+    body:{
+        color:"red",
+        transform:"skewY(-6deg)"
+    },
+    span:{
+        color:"black"
+    },
+    "#content":{
+        '>':{
+            p:{
+                lineHeight:"20px"
+            }
+        }
+    }
+});
+                 </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode"><code class="html">
+&lt;!--
+通过html标签创建Std.animation.keyframes与CSS3通用并兼容所有浏览器的动画规则..
+StdJS内置解析和执行的模块,无需浏览器支持,可以在低版本的浏览器中运行
+可以动态的手动暂停或者停止正在执行的任务
+--&gt;
+
+&lt;script type="text/std-animation"&gt;
+@keyframes testKeyframe{
+    0%{
+      width:50px;
+      height:100px;
+      background:red;
+    }
+    50%{
+      width:90px;
+      height:120px;
+      background:blue;
+      color:red;
+      animation-timing-function:ease;
+    }
+    100%{
+      height:150px;
+      width:300px;
+      background:green;
+      color:blue;
+    }
+}
+&lt;/script&gt;
+                 </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode"><code class="html">
+&lt;!--
+高性能模板,内置两套语法,简写语法和JS语法
+--&gt;
+
+&lt;script type="text/std-template" std-name="tpl1"&gt;
+    &lt;?@include 'header.tpl'?&gt;
+    &lt;div class="title"&gt;&lt;?=title?&gt;&lt;/div&gt;
+    &lt;?#each abc as index,value?&gt;
+    &lt;div class="item"&gt;
+        &lt;div class="_index"&gt;&lt;?=index?&gt;&lt;/div&gt;
+        &lt;div class="_value"&gt;&lt;?=value?&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;?/each?&gt;
+&lt;/script&gt;
+
+&lt;script&gt;
+    Std.main(function(){
+        Std.template("tpl1").renderTo("body",{
+            abc:["first","second","last"],
+            title:"title text"
+        });
+    })
+&lt;/script&gt;
+                 </code></pre>
+             </div>
+
+             <div class="_example">
+                 <pre class="StdUI_SourceCode"><code class="javascript">
+/*
+* 创建两个模块,A和B,模块B继承模块A
+* 模块B会继承模块A的所有参数,例如静态方法,option参数选项,模型等
+* 模块可以被多次继承,成员方法本身也可以被多次扩展
+*/
+var A = Std.module({
+    model:"events",
+    option:{
+        width:32,
+        height:32,
+        name:"test"
+    },
+    static:{
+        func1:function(){
+            console.log("static func1");
+        },
+        func2:function(){
+            console.log("static func2");
+        }
+    },
+    public:{
+        func1:function(){
+            console.log("func1_A");
+        },
+        func2:function(){
+            console.log(this.opts.name);
+        }
+    },
+    main:function(option){
+        this.init_opts(option);
+        console.log("main_a");
+    }
+});
+
+//创建模块B,继承模块A,并且扩展成员方法func1
+var B = Std.module({
+    parent:A,
+    option:{
+        name:"testB"
+    },
+    extend:{
+        func1:function(){
+            console.log("func1_B")
+        }
+    },
+    main:function(){
+        console.log("main_b");
+    }
+})
+
+//创建模块A的实例
+var a = new A({width:44});
+
+//创建模块B的实例
+var b = new B({width:56});
+                 </code></pre>
+             </div>
+        </div>
+
+        <div class="_detail _projects">
+            <div class="_title">StdJS相关链接</div>
+
+            <div class="_project">
+                <div class="_icon _unlock"></div>
+                <div class="_info">
+                    <a class="_name" href="http://www.stdjs.com">StdJS</a>
+                    <div class="_content">
+                        通用Javascript核心库
+                    </div>
+                </div>
+            </div>
+
+            <div class="_project">
+                <div class="_icon _unlock"></div>
+                <div class="_info">
+                    <a class="_name" href="http://ui.stdjs.com">Std UI Kit</a>
+                    <div class="_content">
+                        丰富的高性能UI组件库
+                    </div>
+                </div>
+            </div>
+
+            <div class="_project">
+                <div class="_icon _unlock"></div>
+                <div class="_info">
+                    <a class="_name" href="http://doc.stdjs.com">StdDoc</a>
+                    <div class="_content">
+                        Std文档中心
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="_detail _subscribe">
+            <div class="_text">
+                我们强烈建议你留下email地址,当StdJS有最新消息的时候,
+                我们会在第一时间内将其消息的详细内容发送到你的邮箱内.
+            </div>
+            <div class="_input">
+                <input type="text" id="email" placeholder="you@domain.com"/>
+            </div>
+            <div class="_submit" id="emailSubmit">提交</div>
+            <div class="_message font3" id="emailMsg"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

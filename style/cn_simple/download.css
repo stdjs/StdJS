@@ -1,0 +1,181 @@
+a{
+    color: #538ddd;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2{
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+}
+h3{
+    font-size: 21px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    height: 30px;
+    letter-spacing: 1px;
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+._block{
+    margin-bottom: 50px;
+}
+
+/******* main *******/
+.body > ._client{
+    margin-top: 20px;
+}
+.body > ._client > ._main ._downloadButton{
+    font-size: 12px;
+    display: inline-block;*display: inline;*zoom: 1;
+    padding: 0 15px 0 55px;
+    height: 60px;
+    line-height: 60px;
+    background-image: url("images/base.png");
+    background-position: 8px -255px;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+.body > ._client > ._main ._downloadButton:hover{
+    text-decoration: none;
+    background-color: #003A7A;
+}
+.body > ._client > ._main input{
+    color: #EFEFEF;
+    font-size: 12px;
+    width: 350px;
+    padding: 12px;
+    background: #111111;
+    border: 2px solid #424242;
+}
+.body > ._client > ._main input:focus{
+    background: #282828;
+}
+.body > ._client > ._main p{
+    font-size: 14px;
+}
+
+/******* history *******/
+._block > ._history{
+
+}
+._block >  ._history > ul{
+    list-style: decimal-leading-zero;
+}
+._block >  ._history > ul > li{
+    padding-left: 40px;
+}
+._block >  ._history  ._item{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+._block >  ._history  ._item > ._version{
+    height: 30px;
+}
+._block >  ._history  ._item > ._version > ._version{
+    font-size: 14px;
+    color: white;
+}
+._block >  ._history  ._item > ._version > ._uptime{
+    overflow: hidden;
+    margin-left: 10px;
+    color: #838383;
+}
+._block >  ._history  ._item > ._link{
+    height: 25px;
+}
+._block > ._history ._item > ._uptime{
+    height: 25px;
+    color: white;
+}
+._block > ._history ._item > ._description{
+    font-size: 12px;
+    color: gray;
+}
+
+/******* browsers *******/
+._block >  ._browsers{
+    margin-top: 30px;
+}
+._block >  ._browsers > ._browser{
+    display: inline-block;*display: inline;*zoom: 1;
+    margin-bottom: 20px;
+    width: 100px;
+}
+._block > ._browsers > ._browser > ._text{
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
+._block > ._browsers > ._browser > ._version{
+    font-size: 13px;
+    text-align: center;
+    color: gray;
+}
+._block > ._browsers > ._browser > ._icon{
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    background: url("images/download.png") no-repeat;
+    opacity: 0.8;
+}
+._block > ._browsers > ._browser > ._icon._firefox{
+    background-position: 0 0;
+}
+._block > ._browsers > ._browser > ._icon._IE{
+    background-position: 0 -60px;
+}
+._block > ._browsers > ._browser > ._icon._safari{
+    background-position: 0 -121px;
+}
+._block > ._browsers > ._browser > ._icon._chrome{
+    background-position: 0 -189px;
+}
+._block > ._browsers > ._browser > ._icon._opera{
+    background-position: 0 -252px;
+}
+._block > ._browsers > ._browser > ._icon._konqueror{
+    background-position: 0 -319px;
+}
+
+/*********** screen resolution ***********/
+@media all and (min-width: 800px) {
+    .body > ._client > ._main{
+        width: -moz-calc(100% - 320px);
+        width: -webkit-calc(100% - 320px);
+        width: calc(100% - 320px);
+    }
+}
+@media all and (max-width: 800px){
+    .body{
+        width: 90%;
+    }
+    .body > ._client > ._sidebar{
+        display: none;
+    }
+    .body > ._client > ._main{
+        width: 100%;
+    }
+}
+@media all and (max-width: 600px){
+    .body{
+        width: 95%;
+    }
+    .body > ._client > ._main input{
+        width: 90%;
+    }
+    ._block >  ._history  ._item > ._version{
+        height: 60px;
+    }
+    ._block >  ._history  ._item > ._version > ._uptime{
+        clear: both;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}

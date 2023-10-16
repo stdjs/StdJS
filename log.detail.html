@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{Title}}</title>
+    <meta name="keywords" content="StdJS新闻,StdJS日志,{{Title}}" />
+    <meta name="description" content="{{Description}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="http://stdjs.com" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <link rel="stylesheet" href="style/{{Config_StyleName}}/base.css" />
+    <link rel="stylesheet" href="style/{{Config_StyleName}}/log.detail.css" />
+    <script src="javascript/common/std.min.js"></script>
+    <script src="javascript/{{Config_StyleName}}/base.js"></script>
+    <script>Std("base").initHighlight()</script>
+</head>
+<body>
+{{include("template/cn_simple/global.header.html")}}
+<div class="body">
+    <div class="_client">
+        <div class="_sidebar">
+            <a class="_item" href="{{Config_ActionPath}}download.location_index">
+                <div class="_title">DOWNLOAD</div>
+                <div class="_text">下载StdJS</div>
+            </a>
+
+            <a class="_item selected" href="{{Config_ActionPath}}log.location_index">
+                <div class="_title">LOG</div>
+                <div class="_text">StdJS相关日志列表</div>
+            </a>
+
+            <a class="_item" href="http://doc.stdjs.com/{{Config_ActionPath}}documentation.location_documentation&ID=8">
+                <div class="_title">DOCUMENTATION</div>
+                <div class="_text">阅读与StdJS有关的API文档</div>
+            </a>
+
+            <a class="_item" href="http://doc.stdjs.com/{{Config_ActionPath}}chapter.location_index&ClassID=8">
+                <div class="_title">TUTORIALS</div>
+                <div class="_text">查看StdJS相关的技术文章</div>
+            </a>
+
+
+            <div class="_list">
+                <div class="font3 _title">其他日志</div>
+                {{IF OtherLogs}}
+                {{BEGIN OtherLogs}}
+                <a href="{{Config_ActionPath}}log.location_detail&ID={{ID}}" title="{{Title}}">{{Title}}</a>
+                {{END}}
+                {{END}}
+            </div>
+
+        </div>
+
+        <div class="_main">
+            <h1 class="_title Std_wordwrap">{{Title}}</h1>
+            <div class="_subtitle">
+                <span class="_uptime">
+                    <span class="_name">更新时间: </span>
+                    <span class="_text">{{Uptime}}</span>
+                </span>
+            </div>
+            <div class="_description Std_wordwrap">{{Description}}</div>
+            <div class="_content Std_wordwrap">
+                {{Content}}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    Std("base").initHighlight();
+</script>
+</body>
+</html>

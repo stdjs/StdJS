@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StdJS相关日志</title>
+    <meta name="keywords" content="StdJS日志,StdJS新闻,StdJS最新资讯" />
+    <meta name="description" content="Std javascript library" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="http://stdjs.com"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico"/>
+    <link rel="stylesheet" href="style/{{Config_StyleName}}/base.css" />
+    <link rel="stylesheet" href="style/{{Config_StyleName}}/log.css" />
+    <script src="javascript/common/std.min.js"></script>
+    <script src="javascript/{{Config_StyleName}}/base.js"></script>
+</head>
+<body>
+
+{{include("template/cn_simple/global.header.html")}}
+
+<div class="body">
+    <div class="_client">
+        <div class="_sidebar">
+            <a class="_item" href="{{Config_ActionPath}}download.location_index">
+                <div class="_title">DOWNLOAD</div>
+                <div class="_text">下载StdJS</div>
+            </a>
+
+            <a class="_item selected" href="{{Config_ActionPath}}log.location_index">
+                <div class="_title">LOG</div>
+                <div class="_text">StdJS相关日志</div>
+            </a>
+
+            <a class="_item" href="http://doc.stdjs.com/{{Config_ActionPath}}documentation.location_documentation&ID=8">
+                <div class="_title">DOCUMENTATION</div>
+                <div class="_text">阅读与StdJS有关的API文档</div>
+            </a>
+
+            <a class="_item" href="http://doc.stdjs.com/{{Config_ActionPath}}chapter.location_index&ClassID=8">
+                <div class="_title">TUTORIALS</div>
+                <div class="_text">查看StdJS相关的技术文章</div>
+            </a>
+
+            <div class="_list _filters">
+                <div class="_title">日志时间</div>
+                <div class="_filter">
+                    <a class="{{IF Filter==''}}selected{{END}}" href="{{Config_ActionPath}}log.location_index">显示全部</a>
+                </div>
+                <div class="_filter">
+                    <a class="{{IF Filter=='7d'}}selected{{END}}"  href="{{Config_ActionPath}}log.location_index&filter=7d">只显示最近7天</a>
+                </div>
+                <div class="_filter">
+                    <a class="{{IF Filter=='1m'}}selected{{END}}"  href="{{Config_ActionPath}}log.location_index&filter=1m">只显示1月内的</a>
+                </div>
+                <div class="_filter">
+                    <a class="{{IF Filter=='3m'}}selected{{END}}"  href="{{Config_ActionPath}}log.location_index&filter=3m">只显示3月内的</a>
+                </div>
+                <div class="_filter">
+                    <a class="{{IF Filter=='1y'}}selected{{END}}"  href="{{Config_ActionPath}}log.location_index&filter=1y">只显示今年更新的</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="_main">
+            {{BEGIN Logs}}
+            <div class="_log">
+                <a class="font3 _title" href="{{Config_ActionPath}}log.location_detail&ID={{ID}}">{{Title}}</a>
+                <div class="_uptime">发表于: {{Uptime}}</div>
+                <div class="_description">
+                    {{Description}}
+                </div>
+            </div>
+            {{END}}
+
+            <div class="_pages">
+                {{BEGIN Pages}}
+                <a class="font1 _page{{IF Current}} selected{{END}}" href="{{Config_ActionPath}}log.location_index{{IF Filter!=''}}&filter={{Filter}}{{END}}&page={{page}}">
+                    {{pageName}}
+                </a>
+                {{END}}
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

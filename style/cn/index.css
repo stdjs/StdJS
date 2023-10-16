@@ -1,0 +1,366 @@
+
+
+/******* _labels *******/
+.body > ._client > ._labels{
+
+}
+.body > ._client > ._labels > ._label{
+    float: left;
+    width: 48%;
+    height: 170px;
+    margin: 10px 0 10px 0;
+    transform:skewX(-10deg);
+}
+.body > ._client > ._labels > ._label > ._title{
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    color: #AB0000;
+}
+.body > ._client > ._labels > ._label > ._description{
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 0 20px 20px 20px;
+    color: #A8A8A8;
+    transform:skewX(10deg);
+}
+.body > ._client > ._labels > ._label._last{
+    float: right;
+}
+
+/******* _circles *******/
+.body > ._client > ._circles{
+    clear: both;
+}
+.body > ._client > ._circles > ._item{
+    float: left;
+    width: 19.99%;
+}
+.body > ._client > ._circles > ._item > ._circle{
+    position: relative;
+    margin: 0 auto;
+    font-size: 64px;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 3px solid #681414;
+    border-radius: 100%;
+    color: #8A1313;
+}
+
+/******* problems *******/
+.body > ._client > ._problems{
+    margin: 10px auto;
+}
+.body > ._client > ._problems > ._problem{
+    float: left;
+    width:33.3%;
+    height: 200px;
+}
+.body > ._client > ._problems > ._problem > ._title{
+    font-size: 22px;
+    padding-left: 55px;
+    height: 42px;
+    color: #9D9D9D;
+    text-decoration:line-through;
+    text-shadow: 0 0 15px #AF2121;
+    background: url("images/base.png") 16px 3px no-repeat;
+}
+.body > ._client > ._problems > ._problem > ._content{
+    color: #A8A8A8;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.6em;
+}
+
+/******* content *******/
+.body > ._client > ._content{
+    margin: 0 auto;
+
+}
+
+/******* text *******/
+.body > ._client > ._text{
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background: #272822;
+    background: rgba(72,74,63,0.5);
+}
+
+/******* projects *******/
+.body > ._client > ._projects{
+    clear: both;
+}
+.body > ._client > ._projects > ._project{
+    float: left;
+    width: 33.3%;
+    height: 140px;
+    overflow: hidden;
+}
+.body > ._client > ._projects > ._project > ._icon{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #3C3C3C;
+    margin-right: 15px;
+    border-radius: 100%;
+    background: url("images/base.png") 23px -32px no-repeat;
+}
+.body > ._client > ._projects > ._project > ._icon._unlock{
+    border-color: transparent;
+    background: url("images/base.png") 4px -125px no-repeat;
+}
+.body > ._client > ._projects > ._project > ._info{
+    display: inline;
+    overflow: hidden;
+}
+.body > ._client > ._projects > ._project > ._info > ._name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #CECECE;
+    text-decoration: none;
+    text-shadow: 0 0 10px red;
+}
+.body > ._client > ._projects > ._project > ._info > a._name:hover{
+    text-decoration: underline;
+}
+.body > ._client > ._projects > ._project > ._info  > ._content{
+    margin-top: 10px;
+    padding-right: 15px;
+    color: #A8A8A8;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/******* channels *******/
+.body > ._client > ._channels{
+    clear: both;
+    position: relative;
+    margin: 10px auto;
+}
+.body > ._client > ._channels > ._channel{
+    float: left;
+    width: 33.3%;
+    height: 180px;
+}
+.body > ._client > ._channels > ._channel > ._title{
+    color: #ab0000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 40px;
+}
+.body > ._client > ._channels > ._channel > ._text{
+    height: 85px;
+    padding-right: 20px;
+    line-height: 1.5em;
+    color: #a8a8a8;
+}
+.body > ._client > ._channels > ._channel > ._button{
+    display: block;
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border:2px solid rgb(113,0,0);
+    color: #a8a8a8;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    outline: none;
+}
+.body > ._client > ._channels > ._channel > ._button:hover{
+    background: #720000;
+}
+.body > ._client > ._channels > ._channel > ._button:active{
+    background: #350000;
+    border-color: #350000;
+}
+
+/******* subscribe *******/
+.body > ._client > ._subscribe{
+    clear: both;
+    height: 100px;
+    margin-top: 80px;
+}
+.body > ._client > ._subscribe > ._text{
+    float: left;
+    font-size: 22px;
+    width: 800px;
+    height: 40px;
+    line-height: 40px;
+}
+.body > ._client > ._subscribe > ._text > ._title{
+    color: #ab0000;
+    text-align: center;
+}
+.body > ._client > ._subscribe > ._text > ._content{
+    margin-left: 10px;
+    color: #ab0000;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.body > ._client > ._subscribe > ._area{
+    float: right;
+    height: 40px;
+    width: 280px;
+    background: #730000;
+    border: 3px solid #730000;
+}
+.body > ._client > ._subscribe > ._area > input{
+    float: left;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-indent: 5px;
+    outline: none;
+    background-color: black;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxOCAxMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPlN0ZWxsYXIgZW52ZWxvcGU8L3RpdGxlPjxwYXRoIGQ9Ik0xNy43MzMgMTEuMDI3di05LjcxOWMwLS4zNy0uMTYzLS43MTItLjQxLS45NTVsLS4xMS0uMDk3Yy0uMjAzLS4xNTgtLjQ0Ni0uMjU2LS43MDUtLjI1NmgtMTUuMjgzYy0uMjc4IDAtLjUzMy4xMDMtLjczOS4yNzFsLS4wMS4wMDljLS4yODcuMjQtLjQ3Ni42MDktLjQ3NiAxLjAyOHY5LjcxOWMwIC4zNDkuMTI4LjY3OC4zNTkuOTI1LjIzMS4yNDcuNTM5LjM4My44NjYuMzgzaDE1LjI4M2MuMzI3IDAgLjYzNS0uMTM2Ljg2Ni0uMzgzLjIzMS0uMjQ3LjM1OS0uNTc1LjM1OS0uOTI1em0tMi4zNTMtOS44OTZsLTYuNDk1IDQuMzk0LTYuNTI0LTQuMzk0aDEzLjAxOXptMS4xMjggMTAuMDc0aC0xNS4yODNjLS4xMiAwLS4xNjYtLjA1LS4xNjYtLjE3N3YtOS40MzdsNy41NDQgNS4wODFjLjE3My4xMTYuMzkzLjExNi41NjUtLjAwMWw3LjUwNS01LjA3OHY5LjQzNWwtLjA0OS4xMjUtLjExOC4wNTJ6IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBmaWxsPSIjRDRENEQ0Ii8+PC9zdmc+Cg==");
+    background-repeat: no-repeat;
+    background-position: right 10px center;;
+    transition: background-color 0.2s;
+}
+.body > ._client > ._subscribe > ._area > input:focus{
+    background-color: #260000;
+}
+.body > ._client > ._subscribe > ._area > ._button{
+    font-family: "ProximaNova-Semibold",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+.body > ._client > ._subscribe > ._area > ._text{
+    height: 25px;
+    line-height: 25px;
+    clear: both;
+    color: #ab0000;
+}
+
+/******* title *******/
+.title{
+    clear: both;
+    font-size: 28px;
+    font-style: italic;
+    padding: 70px 0 40px 0;
+    margin-bottom: 50px;
+    color: #AB0000;
+    text-align: center;
+    border-bottom: 3px solid #531010;
+}
+
+/******* screen resolution *******/
+@media all and (max-width: 1200px){
+    .body > ._client > ._circles > ._item > ._circle{
+        font-size: 64px;
+        height: 128px;
+        width: 128px;
+        line-height: 128px;
+    }
+    .body > ._client > ._projects > ._project{
+        font-size: 13px;
+    }
+    .body > ._client > ._projects > ._project > ._info > ._name{
+        font-size: 16px;
+    }
+    .body > ._client > ._projects > ._project > ._info  > ._content{
+        margin-top: 5px;
+    }
+    .body > ._client > ._subscribe > ._text{
+        width: 600px;
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 1000px){
+    .title{
+        font-size: 24px;
+    }
+    .body > ._client > ._circles > ._item > ._circle{
+        font-size: 52px;
+        height: 110px;
+        width: 110px;
+        line-height: 110px;
+    }
+    .body > ._client > ._projects > ._project{
+        width: 50%;
+        font-size: 14px;
+    }
+    .body > ._client > ._subscribe{
+        height: 120px;
+    }
+    .body > ._client > ._subscribe > ._text{
+        line-height: 1.4em;
+        float: none;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .body > ._client > ._subscribe > ._area{
+        float: none;
+        margin: 10px auto;
+    }
+    .body > ._client > ._channels > ._channel{
+        width: 50%;
+    }
+}
+@media all and (max-width: 900px){
+    .title{
+        padding: 40px 0 40px 0;
+    }
+    .body > ._client > ._circles > ._item > ._circle{
+        font-size: 48px;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+    }
+    .body > ._client > ._problems > ._problem{
+        width: 50%;
+    }
+    .body > ._client > ._subscribe > ._text{
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 650px){
+    .body > ._client > ._circles{
+        display: none;
+    }
+    .body > ._client > ._labels > ._label{
+        width: 98%;
+    }
+    .body > ._client > ._projects > ._project{
+        width: 98%;
+    }
+    .body > ._client > ._channels > ._channel{
+        width: 98%;
+    }
+    .body > ._client > ._problems > ._problem{
+        width: 98%;
+    }
+    .body > ._client > ._channels > ._channel > ._title{
+        text-align: center;
+    }
+    .body > ._client > ._channels > ._channel > ._button{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,171 @@
+body,html{
+    font-size: 14px;
+    background: #000000;
+    color: white;
+    margin: 0;
+    font-family:"Microsoft YaHei","Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+pre code{
+    background: #272822;
+    background: rgba(72,74,63,0.5);
+    display: block;
+    font-family: "Source Code Pro","Courier New","Helvetica Neue","monospace",HelveticaNeue,Helvetica,Arial,serif;
+    overflow-x: auto;
+    padding: 0.5em;
+    *white-space: pre;
+    *word-wrap: break-word;
+}
+
+
+/********* font *********/
+.font1{
+    font-family:"Helvetica Neue","Segoe UI",Segoe,Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+.font2{
+    font-family: "Source Code Pro","Courier New","Helvetica Neue","monospace",HelveticaNeue,Helvetica,Arial,serif;
+}
+.font3{
+    font-family:"Microsoft YaHei","Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/********* header *********/
+.header{
+    height: 75px;
+    text-align: center;
+    overflow: hidden;
+}
+.header > ._links{
+    display: inline-block;*display: inline;*zoom: 1;
+}
+.header > ._links > a{
+    display: inline-block;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+    padding: 20px 0 20px 0;
+    margin: 0 25px 0 25px;
+    border-top: 3px solid transparent;
+    outline: none;
+}
+.header > ._links > a:hover{
+    color: white;
+}
+.header > ._links > a.selected{
+    color: #0075f7;
+    border-top: 3px solid #0075f7;
+}
+.header > ._links > a > ._name2{
+    display: none;
+}
+
+/********* body *********/
+.body{
+    clear: both;
+    margin: 0 auto;
+    width: 1000px;
+}
+.body > ._client{
+    margin: 0 auto;
+    overflow: hidden;
+}
+.body > ._client > ._main{
+    float: right;
+    width: 680px;
+}
+
+/******** sidebar *********/
+.body > ._client > ._sidebar{
+    float: left;
+    width: 280px;
+    margin-right: 40px;
+}
+.body > ._client > ._sidebar > ._item{
+    font-size: 12px;
+    display: block;
+    padding: 15px 15px 15px 45px;
+    margin-bottom: 2px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    border: 1px dotted transparent;
+}
+.body > ._client > ._sidebar > ._item > ._title{
+    font-family: "ProximaNova-SemiBold",sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    height: 20px;
+}
+.body > ._client > ._sidebar > ._item > ._text{
+    color: #a8a8a8;
+}
+.body > ._client > ._sidebar > ._list{
+    padding: 10px 0 10px 45px;
+}
+.body > ._client > ._sidebar > ._list > a{
+    font-size: 13px;
+    display: block;
+    height: 25px;
+    color: white;
+    text-decoration: none;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.body > ._client > ._sidebar > ._list > a:hover{
+    text-decoration: underline;
+}
+.body > ._client > ._sidebar > ._item.hover{
+    border-color: #003A7A;
+}
+.body > ._client > ._sidebar > ._item.press,
+.body > ._client > ._sidebar > ._item.selected{
+    border-color: #003A7A;
+    background: #000914;
+    background: rgba(0,23,50,0.4);
+}
+.body > ._client > ._sidebar > ._item.selected > ._title{
+    color: #0075f7;
+}
+
+/*********** screen ***********/
+@media all and (max-width: 1100px) {
+    .body{
+        width: 900px;
+    }
+    .header > ._links > a{
+        margin: 0 20px 0 20px;
+    }
+}
+@media all and (max-width: 920px) {
+    .body{
+        width: 700px;
+    }
+    .header > ._links > a{
+        margin: 0 15px 0 15px;
+    }
+}
+@media all and (max-width: 720px) {
+    .body{
+        width: 500px;
+    }
+    .header > ._links > a{
+        margin: 0 10px 0 10px;
+    }
+}
+@media all and (max-width: 520px) {
+    .body{
+        width: 95%;
+    }
+    .header > ._links > a > ._name1{
+        display: none;
+    }
+    .header > ._links > a > ._name2{
+        display: inline;
+    }
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download StdJS</title>
+    <meta name="keywords" content="StdJS下载,StdJS最新版本,StdJS download" />
+    <meta name="description" content="Std javascript library,StdJS最新版本下载" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="http://stdjs.com"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico"/>
+    <link rel="stylesheet" href="style/cn_simple/base.css" />
+    <link rel="stylesheet" href="style/cn_simple/download.css" />
+    <script src="javascript/common/std.min.js"></script>
+    <script src="javascript/cn_simple/base.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="_links font2">
+        <a class="_link{{IF LocationName=='index'}} selected{{END}}" href="./">
+            <span class="_name1">网站首页</span>
+            <span class="_name2">首页</span>
+        </a>
+        <a class="_link{{IF LocationName=='download'}} selected{{END}}" href="download.html">
+            <span class="_name1">下载StdJS</span>
+            <span class="_name2">下载</span>
+        </a>
+        <a class="_link{{IF LocationName=='log'}} selected{{END}}" href="#">
+            <span class="_name1">相关日志</span>
+            <span class="_name2">日志</span>
+        </a>
+        <a class="_link" href="http://doc.stdjs.com/">
+            <span class="_name1">API文档</span>
+            <span class="_name2">文档</span>
+        </a>
+        <a class="_link" href="http://doc.stdjs.com/">
+            <span class="_name1">技术文章</span>
+            <span class="_name2">文章</span>
+        </a>
+    </div>
+</div>
+
+
+<div class="body">
+    <div class="_client">
+        <div class="_sidebar">
+            <a class="_item selected" href="download.html">
+                <div class="_title">DOWNLOAD</div>
+                <div class="_text">下载StdJS</div>
+            </a>
+
+            <a class="_item" href="log.html">
+                <div class="_title">LOG</div>
+                <div class="_text">StdJS相关日志</div>
+            </a>
+
+            <a class="_item" href="http://doc.stdjs.com/">
+                <div class="_title">DOCUMENTATION</div>
+                <div class="_text">阅读与StdJS有关的API文档</div>
+            </a>
+
+            <a class="_item" href="http://doc.stdjs.com/">
+                <div class="_title">TUTORIALS</div>
+                <div class="_text">查看StdJS相关的技术文章</div>
+            </a>
+        </div>
+
+        <div class="_main">
+            <div class="_block">
+                <h3>最新版本</h3>
+                <p>
+                    <a class="_downloadButton Std_wordnowrap font2" href="#" download="std.min.js">下载 StdJS {{LastVersion}} ({{LastUptime}})</a>
+                </p>
+                <p>
+                    <a class="_downloadButton Std_wordnowrap font2" href="#" download="std.debug.min.js">下载 StdJS Debug版本 {{LastVersion}} ({{LastUptime}})</a>
+                </p>
+            </div>
+
+            <div class="_block">
+                <h3>官方源</h3>
+                <p>StdJS扩展功能代码仓库地址:</p>
+                <p>
+                    <input type="text" readonly value="http://source.stdjs.com/"/>
+                </p>
+
+                <p>StdJS扩展功能代码仓库Git地址:</p>
+                <p>
+                    <input type="text" readonly value="https://github.com/stdjs/SourceRepository.git"/>
+                </p>
+            </div>
+
+            <div class="_block">
+                <h3>浏览器支持</h3>
+                <div class="_browsers">
+                    <div class="_browser">
+                        <div class="_icon _firefox"></div>
+                        <div class="_text">Firefox</div>
+                        <div class="_version">≥ 4.0</div>
+                    </div>
+                    <div class="_browser">
+                        <div class="_icon _IE"></div>
+                        <div class="_text">IE</div>
+                        <div class="_version">≥ 6.0</div>
+                    </div>
+                    <div class="_browser">
+                        <div class="_icon _safari"></div>
+                        <div class="_text">Safari</div>
+                        <div class="_version">≥ 2.0</div>
+                    </div>
+                    <div class="_browser">
+                        <div class="_icon _chrome"></div>
+                        <div class="_text">Chrome</div>
+                        <div class="_version">≥ 4.0</div>
+                    </div>
+                    <div class="_browser">
+                        <div class="_icon _opera"></div>
+                        <div class="_text">Opera</div>
+                        <div class="_version">≥ 10.53</div>
+                    </div>
+                    <div class="_browser">
+                        <div class="_icon _konqueror"></div>
+                        <div class="_text">Konqueror</div>
+                        <div class="_version">≥ 4.0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="_block">
+                <h3>历史版本</h3>
+                <div class="_history">
+                    <ul>
+                        <li class="_item">
+                            <div class="_version">
+                                <span class="_version">StdJS 0.21</span>
+                                <span class="_uptime">({{Uptime}})</span>
+                            </div>
+                            <div class="_link">
+                                <a href="#">Download StdJS</a>
+                            </div>
+                            <div class="_link">
+                                <a href="#">Download StdJS Debug版本</a>
+                            </div>
+                            <div class="_description">{{Description}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    Std.main(function(){
+        Std.dom(".body").on("click","input",function(){
+            this.select();
+        });
+    });
+</script>
+</body>
+</html>
